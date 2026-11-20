@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Менің портфолиом: C++ және Pascal</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1d2433;--muted:#5d6678;--accent:#2563eb;--accent2:#7c3aed;--code:#0f172a;--codet:#e2e8f0;--line:#e3e7ef;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e121b;--card:#171d2a;--text:#e8ecf5;--muted:#9aa5ba;--accent:#6ea0ff;--accent2:#b79cff;--code:#05080f;--codet:#e2e8f0;--line:#262e40}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:10px 14px;z-index:5}
+nav a{white-space:nowrap;text-decoration:none;color:var(--text);padding:6px 12px;border-radius:999px;font-size:14px;background:var(--bg)}
+header{padding:40px 20px 32px;text-align:center;color:#fff;background:linear-gradient(135deg,#2563eb,#7c3aed)}
+.ava{width:92px;height:92px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;font-size:40px;margin:0 auto 14px}
+h1{margin:0 0 6px;font-size:26px}
+header p{margin:0;opacity:.92}
+main{max-width:760px;margin:0 auto;padding:16px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:16px 0}
+h2{margin:0 0 10px;font-size:21px;color:var(--accent)}
+h3{margin:16px 0 6px;font-size:16px;color:var(--accent2)}
+ul{padding-left:20px;margin:6px 0}
+pre{background:var(--code);color:var(--codet);padding:14px;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.5;margin:8px 0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:420px;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+th{background:var(--bg)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--bg);border:1px solid var(--line);padding:4px 12px;border-radius:999px;font-size:14px}
+.btn{display:inline-block;margin:4px 6px 4px 0;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-size:15px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:20px 16px 28px}
+</style>
+</head>
+<body>
+<nav>
+<a href="#about">Мен жайлы</a>
+<a href="#cpp">C++</a>
+<a href="#pascal">Pascal</a>
+<a href="#compare">Салыстыру</a>
+<a href="#contact">Байланыс</a>
+</nav>
+
+<header>
+<div class="ava">👨‍💻</div>
+<h1>Ерболатұлы Расул</h1>
+<p>Студент · бағдарламалауды үйреніп жүрмін</p>
+</header>
+
+<main>
+<section id="about">
+<h2>Мен жайлы</h2>
+<p>Сәлем! Мен Жұбанов университетінің студентімін. Бағдарламалау тілдерін үйреніп, алгоритмдік ойлауды дамытып жүрмін. Бұл бетте C++ және Pascal тілдері бойынша білгенімді көрсетемін.</p>
+<ul>
+<li><b>Оқу орны:</b> Жұбанов университеті</li>
+<li><b>Бағыты:</b> Автоматтандыру және басқару</li>
+<li><b>Қызығушылығым:</b> бағдарламалау, Arduino, алгоритмдер</li>
+</ul>
+<h3>Дағдыларым</h3>
+<div class="tags"><span>C++</span><span>Pascal</span><span>HTML/CSS</span><span>Arduino</span></div>
+</section>
+
+<section id="cpp">
+<h2>C++ тілі</h2>
+<p>C++ — жылдамдығы жоғары, жүйелік бағдарламалауда, ойындарда және ендірілген жүйелерде кеңінен қолданылатын тіл. Ол C тілінің негізінде жасалған және объектілі-бағытталған бағдарламалауды қолдайды.</p>
+<h3>Негізгі ұғымдар</h3>
+<ul>
+<li>Айнымалылар: int, double, char, bool, string</li>
+<li>Шарттар: if, else, switch</li>
+<li>Циклдар: for, while, do-while</li>
+<li>Функциялар, массивтер, көрсеткіштер, кластар</li>
+</ul>
+<h3>Мысал: екі санның қосындысы</h3>
+<pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+    cout &lt;&lt; "Екі сан енгізіңіз: ";
+    cin &gt;&gt; a &gt;&gt; b;
+    cout &lt;&lt; "Қосындысы: " &lt;&lt; a + b &lt;&lt; endl;
+    return 0;
+}</pre>
+<h3>Мысал: 1-ден 10-ға дейінгі сандар</h3>
+<pre>for (int i = 1; i &lt;= 10; i++) {
+    cout &lt;&lt; i &lt;&lt; " ";
+}</pre>
+</section>
+
+<section id="pascal">
+<h2>Pascal тілі</h2>
+<p>Pascal — Никлаус Вирт жасаған, оқуға арналған тіл. Синтаксисі айқын әрі түсінікті, сондықтан бағдарламалауды алғаш үйренгенде өте ыңғайлы.</p>
+<h3>Негізгі ұғымдар</h3>
+<ul>
+<li>Айнымалылар: var бөлімінде жарияланады (integer, real, char, string)</li>
+<li>Шарттар: if ... then ... else, case</li>
+<li>Циклдар: for, while, repeat ... until</li>
+<li>Процедуралар мен функциялар, массивтер, жазбалар</li>
+</ul>
+<h3>Мысал: екі санның қосындысы</h3>
+<pre>program Qosyndy;
+var
+  a, b: integer;
+begin
+  write('Екі сан енгізіңіз: ');
+  readln(a, b);
+  writeln('Қосындысы: ', a + b);
+end.</pre>
+<h3>Мысал: 1-ден 10-ға дейінгі сандар</h3>
+<pre>var i: integer;
+begin
+  for i := 1 to 10 do
+    write(i, ' ');
+end.</pre>
+</section>
+
+<section id="compare">
+<h2>C++ және Pascal салыстыру</h2>
+<div class="tw">
+<table>
+<tr><th>Белгі</th><th>C++</th><th>Pascal</th></tr>
+<tr><td>Блок</td><td>{ }</td><td>begin ... end</td></tr>
+<tr><td>Меншіктеу</td><td>=</td><td>:=</td></tr>
+<tr><td>Шығару</td><td>cout</td><td>write / writeln</td></tr>
+<tr><td>Енгізу</td><td>cin</td><td>read / readln</td></tr>
+<tr><td>Салыстыру (тең)</td><td>==</td><td>=</td></tr>
+<tr><td>Қолданылуы</td><td>жүйелер, ойындар, өндіріс</td><td>оқыту, алгоритмдер</td></tr>
+</table>
+</div>
+</section>
+
+<section id="contact">
+<h2>Байланыс</h2>
+<p>Менімен хабарласу үшін:</p>
+<a class="btn" href="mailto:example@mail.com">Email жазу</a>
+<a class="btn" href="tel:+77000000000">Қоңырау шалу</a>
+</section>
+</main>
+
+<footer>© 2026 · Ерболатұлы Расул</footer>
+</body>
+</html>
